@@ -9,11 +9,11 @@ class Config:
     SESSION_NAME = os.environ.get("SESSION_NAME", ":memory:")
     LOG_CHANNEL = int(os.environ.get("-1001186899897"))
     DATABASE_URL = os.environ.get("mongodb+srv://erichdaniken:erichdaniken@cluster0.r8cnv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-    AUTH_USERS = [int(i) for i in os.environ.get("AUTH_USERS", "").split(" ")]
+    AUTH_USERS = [int(i) for i in os.environ.get("AUTH_USERS", "1383273914").split(" ")]
     MAX_PROCESSES_PER_USER = int(os.environ.get("MAX_PROCESSES_PER_USER", 2))
     MAX_TRIM_DURATION = int(os.environ.get("MAX_TRIM_DURATION", 600))
     TRACK_CHANNEL = int(os.environ.get("TRACK_CHANNEL", False))
-    SLOW_SPEED_DELAY = int(os.environ.get("SLOW_SPEED_DELAY", 5))
+    SLOW_SPEED_DELAY = int(os.environ.get("SLOW_SPEED_DELAY", 15))
     HOST = os.environ.get("HOST", "")
     TIMEOUT = int(os.environ.get("TIMEOUT", 60 * 30))
     DEBUG = bool(os.environ.get("DEBUG"))
